@@ -1,0 +1,4 @@
+This script was written for a specific domain and has the domain specific data removed. It may need tweaking to get working.
+The idea is that you point the script to your SMTP Relay and to your domain controller IP Address or name and the script will run through each
+Windows based machine in the "Servers" OU and compare the time against the DC, as well as verify if the Server is using the DC as it's upstream
+NTP server. Useful for time sensitive environments.
