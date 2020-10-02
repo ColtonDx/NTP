@@ -4,12 +4,6 @@
   \ \/\/ / |_ \/ /  | | | |\/| |
    \_/\_/ |___/___| |_| |_|  |_|
                                
-
-Updated: 10/3/19
-By: Colton Dixon
-
-
-
 Description:
     This script does the following:
         1. Ask AD for a List of Machines in the "Servers" OU
@@ -18,19 +12,6 @@ Description:
         3. Generates a Peer list for each machine
             3.b. The plan is to filter this peer list and send an email alert if each any point to a non-DC
         4. Sends an email if any are off by more than the called out amount of time
-
- __   _____ ___  ___ ___ ___  _  _ 
- \ \ / / __| _ \/ __|_ _/ _ \| \| |
-  \ V /| _||   /\__ \| | (_) | .` |
-   \_/ |___|_|_\|___/___\___/|_|\_|
-       
-Version 1.2
-    Added Documentation to the script, as well as section headers and version section. Updates to script will be noted here.
-    Changed to a more effecient $timediff equation, by using the [Math]:: Assembly.
-
-Version 1.3
-    Adding filter to $Server variable to only pull Windows machines from AD, as the Powershell can't request NTP Info from Linux.
-    Added Notes to each section on what the various variables are and mean.
 
 
   ___ _   _ _  _  ___ _____ ___ ___  _  _ ___ 
